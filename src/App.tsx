@@ -5,11 +5,10 @@ import Container from "./assets/Container.svg";
 const App: React.FC = () => {
   return (
     <div
-      className="relative h-[900px] bg-no-repeat bg-cover bg-center"
+      className="relative h-500px bg-no-repeat bg-cover "
       style={{ backgroundImage: `url(${Container})` }}
     >
 
-      {/* Content on top of background */}
       <div className="relative ">
         <Navbar />
         <HeroSection />
