@@ -6,8 +6,8 @@ export const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     return (
-        <nav className="bg-white shadow-md rounded-xl mx-3 md:mx-6 mt-5 px-2 md:px-2 py-2">
-            <div className="border border-gray-100 p-5 rounded-md ">
+        <nav className="bg-white shadow-md rounded-full mx-3 md:mx-2 mt-5 px-2 md:px-2 py-2">
+            <div className="border border-gray-100 p-5 rounded-full ">
                 <div className="flex items-center justify-between">
                     <img
                         src={logo}
@@ -15,7 +15,7 @@ export const Navbar: React.FC = () => {
                         className="h-8 md:h-10 w-auto cursor-pointer"
                     />
 
-                    <ul className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
+                    <ul className="hidden md:flex items-center gap-9 text-gray-500 font-medium">
                         {links.map((item) => (
                             <li
                                 key={item}
@@ -27,11 +27,11 @@ export const Navbar: React.FC = () => {
                     </ul>
 
                     <div className="hidden md:flex items-center gap-3">
-                        <button className="md:px-3 px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 transition">
+                        <button className="md:px-3 px-4 py-2  ">
                             Sign In
                         </button>
-                        <button className="md:px-3 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-blue-700 transition">
-                            Sign Up
+                        <button className="md:px-3 px-3 py-2 border border-gray-300 rounded-full">
+                           <b>Sign Up for free</b> 
                         </button>
                     </div>
 

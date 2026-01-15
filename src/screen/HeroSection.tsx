@@ -4,26 +4,29 @@ import Group from "../assets/Group.svg"
 import Group1 from "../assets/Group1.svg"
 import Group2 from "../assets/Group2.svg"
 import Group3 from "../assets/Group3.svg"
+import Group4 from "../assets/Group4.svg"
 import arrowup from "../assets/arrowup.svg"
 import arrowdown from "../assets/arrowdown.svg"
+import location from "../assets/location.svg"
 export const HeroSection: React.FC = () => {
 
     return (
-        <div className="overflow-x-hidden px-4 md:px-8 py-10">
+        <div className="overflow-x-hidden px-4 md:px-8 py-10 mt-20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
 
                 {/* LEFT CARDS */}
                 <div className="order-2 md:order-none flex flex-col gap-6 items-center md:items-end">
 
-                    <div className="bg-white rounded-xl p-2 w-48 shadow-md">
-                        <div className="border border-gray-100 p-4 rounded-md ">
+                    <div className="bg-white rounded-xl p-2 w-35 shadow-md">
+                        <div className="border border-gray-100 p-4 rounded-md  ">
                             <img src={vector} alt="..." className="h-8 w-8 mb-2" />
                             <p className="text-xl font-bold">12K</p>
-                            <p className="text-gray-600">Customers</p></div>
+                            <p className="text-gray-600">Customers</p>
+                        </div>
 
                     </div>
 
-                    <div className="bg-white rounded-xl p-2 w-64 shadow-md">
+                    <div className="bg-white rounded-xl p-2 w-60 shadow-md">
                         <div className="border border-gray-100 p-4 rounded-md ">
                             <p className="text-xl font-bold">Hi, Sara Smith</p>
                             <p className="text-gray-600">
@@ -31,11 +34,16 @@ export const HeroSection: React.FC = () => {
                             </p>
 
                             <div className="mt-3 flex items-center gap-3">
-                                <img src={Group} className="h-10 w-10 rounded-full" />
+                                <img src={Group4} className="h-10 w-10 rounded-full" />
                                 <div>
                                     <p className="font-medium">Sara Smith</p>
                                     <p className="text-sm text-gray-500">July 27, 2023</p>
                                 </div>
+                            </div>
+                            <hr className="border-b border-gray-200 my-4" />
+                            <div className="flex flex-row gap-2">
+                                <img src={location} />
+                                <p>Sydney, Australia, 2000</p>
                             </div>
                         </div>
                     </div>
@@ -49,7 +57,7 @@ export const HeroSection: React.FC = () => {
 
                     <p className="text-3xl md:text-4xl font-bold leading-relaxed">
                         Save Time and Build Better with{' '}
-                        <span className="bg-purple-600 text-white px-4 py-1 rounded-full">
+                        <span className="bg-purple-700 text-white px-5 py-2 rounded-full">
                             Stellar
                         </span>
                     </p>
@@ -68,41 +76,55 @@ export const HeroSection: React.FC = () => {
 
                 {/* RIGHT CARDS */}
                 <div className="order-3 md:order-none flex flex-col gap-6 items-center md:items-start">
-                    <div className="bg-white rounded-xl p-2 w-48 shadow-md">
+                    <div className="bg-white rounded-xl p-2 w-37 whitespace-nowrap shadow-md">
                         <div className="border border-gray-100 p-4 rounded-md ">
                             <p className="text-md font-bold">Sales Meeting</p>
                             <p className="text-gray-600">11:00 - 1:30</p>
 
-                            <div className="flex mt-3 -space-x-3">
-                                <img src={Group} className="h-8 w-8 rounded-full border-2 border-white" />
-                                <img src={Group1} className="h-8 w-8 rounded-full border-2 border-white" />
-                                <img src={Group2} className="h-8 w-8 rounded-full border-2 border-white" />
-                                <div className="relative h-8 w-8">
-                                    <img src={Group3} className="h-8 w-8 rounded-full border-2 border-white" />
-                                    <span className="absolute inset-0 flex items-center justify-center text-xs">
+                            <div className="flex items-center mt-3 -space-x-2">
+                                <img
+                                    src={Group}
+                                    className="h-8 w-8 rounded-full border-2 border-white z-40"
+                                />
+                                <img
+                                    src={Group1}
+                                    className="h-8 w-8 rounded-full border-2 border-white z-30"
+                                />
+                                <img
+                                    src={Group2}
+                                    className="h-8 w-8 rounded-full border-2 border-white z-20"
+                                />
+
+                                <div className="relative h-8 w-8 ">
+                                    <img
+                                        src={Group3}
+                                        className="h-8 w-8 rounded-full border-2 border-white"
+                                    />
+                                    <span className=" absolute inset-0 flex items-center justify-center text-xs font-semibold">
                                         +8
                                     </span>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
-                    <div className="bg-white rounded-xl p-2 w-64 shadow-md">
+                    <div className="bg-white rounded-xl p-2 w-65 shadow-md">
                         <div className="border border-gray-100 p-4 rounded-md ">
                             <p className="text-xl font-bold text-center">
                                 Stellar Highlights
                             </p>
-                            <div className="h-1 w-full bg-gray-100 my-4"></div>
-                            <div className="flex flex-col gap-4">
-                                <div className="flex items-center justify-between">
-                                    <p className="text-gray-600">Avg Client Rating</p>
+                            <hr className="border-b border-gray-200 my-4" />
+                            <div className="flex flex-col gap-5">
+                                <div className="flex gap-6">
+                                    <p className="text-gray-600 whitespace-nowrap">Avg Client Rating</p>
                                     <div className="flex items-center gap-2">
                                         <img src={arrowup} alt="arrow up" className="h-3 w-3" />
                                         <p>8.8/10</p>
                                     </div>
                                 </div>
 
-                            
+
                                 <div className="flex items-center justify-between">
                                     <p className="text-gray-600">Avg Quotes</p>
                                     <div className="flex items-center gap-2">
@@ -111,7 +133,7 @@ export const HeroSection: React.FC = () => {
                                     </div>
                                 </div>
 
-                                
+
                                 <div className="flex items-center justify-between">
                                     <p className="text-gray-600">Avg Agent Earning</p>
                                     <div className="flex items-center gap-2">
@@ -120,9 +142,6 @@ export const HeroSection: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
