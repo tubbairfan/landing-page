@@ -8,6 +8,8 @@ import Group4 from "../assets/Group4.svg"
 import arrowup from "../assets/arrowup.svg"
 import arrowdown from "../assets/arrowdown.svg"
 import location from "../assets/location.svg"
+import {Card} from "./components/Cards"
+import {Chip} from "./components/Chip"
 export const HeroSection: React.FC = () => {
 
     return (
@@ -17,49 +19,47 @@ export const HeroSection: React.FC = () => {
                 {/* LEFT CARDS */}
                 <div className="order-2 md:order-none flex flex-col gap-6 items-center md:items-end">
 
-                    <div className="bg-white rounded-xl p-2 w-35 shadow-md">
-                        <div className="border border-gray-100 p-4 rounded-md  ">
-                            <img src={vector} alt="..." className="h-8 w-8 mb-2" />
-                            <p className="text-xl font-bold">12K</p>
-                            <p className="text-gray-600">Customers</p>
-                        </div>
+                    <Card className="w-35">
+                        <img src={vector} alt="..." className="h-8 w-8 mb-2" />
+                        <p className="text-xl font-bold">12K</p>
+                        <p className="text-gray-600">Customers</p>
+                    </Card>
 
-                    </div>
 
-                    <div className="bg-white rounded-xl p-2 w-60 shadow-md">
-                        <div className="border border-gray-100 p-4 rounded-md ">
-                            <p className="text-xl font-bold">Hi, Sara Smith</p>
-                            <p className="text-gray-600">
-                                What would you like to explore today?
-                            </p>
+                    <Card className="w-60">
+                        <p className="text-xl font-bold">Hi, Sara Smith</p>
+                        <p className="text-gray-600">
+                            What would you like to explore today?
+                        </p>
 
-                            <div className="mt-3 flex items-center gap-3">
-                                <img src={Group4} className="h-10 w-10 rounded-full" />
-                                <div>
-                                    <p className="font-medium">Sara Smith</p>
-                                    <p className="text-sm text-gray-500">July 27, 2023</p>
-                                </div>
-                            </div>
-                            <hr className="border-b border-gray-200 my-4" />
-                            <div className="flex flex-row gap-2">
-                                <img src={location} />
-                                <p>Sydney, Australia, 2000</p>
+                        <div className="mt-3 flex items-center gap-3">
+                            <img src={Group4} className="h-10 w-10 rounded-full" />
+                            <div>
+                                <p className="font-medium">Sara Smith</p>
+                                <p className="text-sm text-gray-500">July 27, 2023</p>
                             </div>
                         </div>
-                    </div>
+
+                        <hr className="border-b border-gray-200 my-4" />
+
+                        <div className="flex gap-2">
+                            <img src={location} />
+                            <p>Sydney, Australia, 2000</p>
+                        </div>
+                    </Card>
+
                 </div>
 
                 {/* CENTER CONTENT */}
                 <div className="order-1 md:order-none text-center">
-                    <p className="text-purple-600 font-semibold mb-2">
+                    <p className=" font-semibold mb-2" style={{ color: "#6E51E0" }}>
                         Our Framer Template
                     </p>
 
-                    <p className="text-3xl md:text-4xl font-bold leading-relaxed">
-                        Save Time and Build Better with{' '}
-                        <span className="bg-purple-700 text-white px-5 py-2 rounded-full">
-                            Stellar
-                        </span>
+                    <p className="text-3xl md:text-4xl font-bold  leading-relaxed">
+                        Save time and build better with{' '}
+                        <Chip text="Stellar" />
+
                     </p>
 
 
@@ -76,42 +76,42 @@ export const HeroSection: React.FC = () => {
 
                 {/* RIGHT CARDS */}
                 <div className="order-3 md:order-none flex flex-col gap-6 items-center md:items-start">
-                    <div className="bg-white rounded-xl p-2 w-37 whitespace-nowrap shadow-md">
-                        <div className="border border-gray-100 p-4 rounded-md ">
+                    <Card className="w-37 whitespace-nowrap">
                             <p className="text-md font-bold">Sales Meeting</p>
                             <p className="text-gray-600">11:00 - 1:30</p>
 
                             <div className="flex items-center mt-3 -space-x-2">
                                 <img
                                     src={Group}
-                                    className="h-8 w-8 rounded-full border-2 border-white z-40"
+                                    className="h-8 w-8 rounded-full border-1 border-white z-40 bg-white"
                                 />
                                 <img
                                     src={Group1}
-                                    className="h-8 w-8 rounded-full border-2 border-white z-30"
+                                    className=" h-8 w-8 rounded-full border-1 border-white z-30 bg-white"
                                 />
                                 <img
                                     src={Group2}
-                                    className="h-8 w-8 rounded-full border-2 border-white z-20"
+                                    className=" h-8 w-8 rounded-full border-1 border-white z-20 bg-white"
                                 />
 
-                                <div className="relative h-8 w-8 ">
+                                <div className="relative h-8 w-8">
                                     <img
                                         src={Group3}
-                                        className="h-8 w-8 rounded-full border-2 border-white"
+                                        className="h-8 w-8 rounded-full border-1 border-white"
                                     />
-                                    <span className=" absolute inset-0 flex items-center justify-center text-xs font-semibold">
+
+                                    <span className="absolute inset-0 mt-2 ml-2 text-[10px]">
                                         +8
                                     </span>
                                 </div>
+
                             </div>
 
-                        </div>
-                    </div>
+                        
+                    </Card>
 
-                    <div className="bg-white rounded-xl p-2 w-65 shadow-md">
-                        <div className="border border-gray-100 p-4 rounded-md ">
-                            <p className="text-xl font-bold text-center">
+                    <Card className="w-65">
+                            <p className="text-xl font-bold">
                                 Stellar Highlights
                             </p>
                             <hr className="border-b border-gray-200 my-4" />
@@ -123,8 +123,6 @@ export const HeroSection: React.FC = () => {
                                         <p>8.8/10</p>
                                     </div>
                                 </div>
-
-
                                 <div className="flex items-center justify-between">
                                     <p className="text-gray-600">Avg Quotes</p>
                                     <div className="flex items-center gap-2">
@@ -132,8 +130,6 @@ export const HeroSection: React.FC = () => {
                                         <p>233</p>
                                     </div>
                                 </div>
-
-
                                 <div className="flex items-center justify-between">
                                     <p className="text-gray-600">Avg Agent Earning</p>
                                     <div className="flex items-center gap-2">
@@ -142,8 +138,8 @@ export const HeroSection: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        
+                    </Card>
                 </div>
 
             </div>

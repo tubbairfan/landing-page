@@ -1,7 +1,12 @@
 import { Navbar } from "./layout/Navbar";
 import { HeroSection } from "./screen/HeroSection";
+import {Partner} from "./screen/Partner"
+import {Stats} from "./screen/Stats"
 import Container from "./assets/Container.svg";
 import bg2 from "./assets/bg2.svg"
+import { Subscribe } from "./screen/Journey";
+import { Products } from "./screen/Products";
+
 const App: React.FC = () => {
   return (
 
@@ -22,6 +27,10 @@ const App: React.FC = () => {
         <Navbar />
         <HeroSection />
       </div>
+      <Partner/>
+      <Stats/>
+      <Subscribe/>
+      <Products/>
     </>
 
 

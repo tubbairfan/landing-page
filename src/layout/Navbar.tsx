@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "../screen/components/Button"
 import logo from "../assets/logo.svg";
 
 export const Navbar: React.FC = () => {
@@ -6,8 +7,8 @@ export const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     return (
-        <nav className="bg-white shadow-md rounded-full mx-3 md:mx-2 mt-5 px-2 md:px-2 py-2">
-            <div className="border border-gray-100 p-5 rounded-full ">
+        <nav className="bg-white shadow-md rounded-full mx-3 lg:mx-8 mt-5 px-2 py-2">
+            <div className="border border-gray-100 p-5 rounded-full lg:p-5 md:p-1 ">
                 <div className="flex items-center justify-between">
                     <img
                         src={logo}
@@ -19,21 +20,23 @@ export const Navbar: React.FC = () => {
                         {links.map((item) => (
                             <li
                                 key={item}
-                                className="cursor-pointer hover:text-blue-600 transition-colors"
+                                className="cursor-pointer hover:text-purple-600 transition-colors"
                             >
                                 {item}
                             </li>
                         ))}
                     </ul>
 
-                    <div className="hidden md:flex items-center gap-3">
-                        <button className="md:px-3 px-4 py-2  ">
-                            Sign In
-                        </button>
-                        <button className="md:px-3 px-3 py-2 border border-gray-300 rounded-full">
-                           <b>Sign Up for free</b> 
-                        </button>
+                    <div className="hidden md:flex items-center gap-3 ">
+                        <Button label="Sign In" variant="ghost" />
+
+                        <Button
+                            label="Sign Up for free"
+                            variant="outline"
+                            className="font-semibold"
+                        />
                     </div>
+
 
                     <button
                         className="md:hidden text-2xl"
@@ -77,13 +80,19 @@ export const Navbar: React.FC = () => {
                     </ul>
 
                     <div className="flex flex-col gap-3 px-6 mt-auto">
-                        <button className="px-4 py-2 border border-gray-300 rounded-md text-gray-700">
-                            Sign In
-                        </button>
-                        <button className="px-4 py-2 bg-purple-600 text-white rounded-md">
-                            Sign Up
-                        </button>
+                        <Button
+                            label="Sign In"
+                            variant="outline"
+                            className="rounded-md"
+                        />
+
+                        <Button
+                            label="Sign Up"
+                            variant="primary"
+                            className="rounded-md"
+                        />
                     </div>
+
                 </div>
             </div>
         </nav>
