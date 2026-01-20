@@ -1,10 +1,10 @@
 import React from "react";
-import { Button } from "../screen/components/Button"
-import background from "../assets/Background.svg";
-import background1 from "../assets/Background1.svg";
-import background2 from "../assets/Background2.svg";
-import background3 from "../assets/Background3.svg";
-import background4 from "../assets/Background4.svg";
+import { Button } from "../../components/UI/Button"
+import background from "../../assets/Background.svg";
+import background1 from "../../assets/Background1.svg";
+import background2 from "../../assets/Background2.svg";
+import background3 from "../../assets/Background3.svg";
+import background4 from "../../assets/Background4.svg";
 
 export const Partner: React.FC = () => {
     const partners = [

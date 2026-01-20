@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "../screen/components/Button"
+import { Button } from "./UI/Button"
 import logo from "../assets/logo.svg";
 
 export const Navbar: React.FC = () => {

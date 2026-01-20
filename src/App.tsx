@@ -1,40 +1,17 @@
-import { Navbar } from "./layout/Navbar";
-import { HeroSection } from "./screen/HeroSection";
-import {Partner} from "./screen/Partner"
-import {Stats} from "./screen/Stats"
-import Container from "./assets/Container.svg";
-import bg2 from "./assets/bg2.svg"
-import { Subscribe } from "./screen/Journey";
-import { Products } from "./screen/Products";
-
-const App: React.FC = () => {
+import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Landing_page} from "./screens/landing-page/index";
+const App:React.FC= () => {
   return (
+    <div>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing_page/>} />
+        
+      </Routes>
+    </BrowserRouter>
+    </div>
+  )
+}
 
-    <>
-      <div className="absolute inset-0 bg-gray-100  h-[600px]">
-        <div
-          className="relative h-[400px] bg-no-repeat bg-cover "
-          style={{ backgroundImage: `url(${Container})` }}
-        >
-        </div>
-        <div
-          className="relative h-[200px] bg-no-repeat bg-cover "
-          style={{ backgroundImage: `url(${bg2})` }}
-        >
-        </div>
-      </div>
-      <div className="relative ">
-        <Navbar />
-        <HeroSection />
-      </div>
-      <Partner/>
-      <Stats/>
-      <Subscribe/>
-      <Products/>
-    </>
-
-
-  );
-};
-
-export default App;
+export default App

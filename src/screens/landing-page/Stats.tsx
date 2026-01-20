@@ -1,12 +1,12 @@
 import React from 'react'
-import { Button } from "../screen/components/Button"
-import right from "../assets/right.svg"
-import { Card } from "./components/Cards"
-import percentage from "../assets/percentage.svg"
-import path from "../assets/path.svg"
-import path1 from "../assets/path1.svg"
-import bg2 from "../assets/bg2.svg"
-import cloud from "../assets/cloud.svg"
+import { Button } from "../../components/UI/Button"
+import right from "../../assets/right.svg"
+import { Card } from "../../components/UI/Cards"
+import percentage from "../../assets/percentage.svg"
+import path from "../../assets/path.svg"
+import path1 from "../../assets/path1.svg"
+import bg2 from "../../assets/bg2.svg"
+import cloud from "../../assets/cloud.svg"
 export const Stats: React.FC = () => {
     return (
 

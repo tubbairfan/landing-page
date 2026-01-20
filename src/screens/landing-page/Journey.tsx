@@ -1,15 +1,15 @@
 import React from 'react'
-import { Card } from "./components/Cards"
-import Group from "../assets/Group.svg"
-import Group1 from "../assets/Group1.svg"
-import Group2 from "../assets/Group2.svg"
-import Group3 from "../assets/Group3.svg"
-import { Button } from "./components/Button"
-import vector1 from "../assets/vector1.svg"
-import vector2 from "../assets/vector2.svg"
-import arrowup from "../assets/arrowup.svg"
-import bg2 from "../assets/bg2.svg"
-import clip from "../assets/Clip path group.svg"
+import { Card } from "../../components/UI/Cards"
+import Group from "../../assets/Group.svg"
+import Group1 from "../../assets/Group1.svg"
+import Group2 from "../../assets/Group2.svg"
+import Group3 from "../../assets/Group3.svg"
+import { Button } from "../../components/UI/Button"
+import vector1 from "../../assets/vector1.svg"
+import vector2 from "../../assets/vector2.svg"
+import arrowup from "../../assets/arrowup.svg"
+import bg2 from "../../assets/bg2.svg"
+import clip from "../../assets/Clip path group.svg"
 export const Subscribe: React.FC = () => {
     return (
         <div className="grid grid-cols-1  lg:grid-cols-[500px_1fr] gap-12 px-4 py-16 xl:ml-30 lg:ml-10">
