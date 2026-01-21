@@ -3,7 +3,7 @@ import { Chip } from "../../components/UI/Chip"
 import { Card } from "../../components/UI/Cards"
 import date from "../../assets/Date.svg"
 import mail from "../../assets/mail.svg"
-import vector3 from "../../assets/vector3.svg"
+import Vector3 from "../../assets/Vector3.svg"
 import vector4 from "../../assets/vector4.svg"
 import vector5 from "../../assets/vector5.svg"
 import vector6 from "../../assets/vector6.svg"
@@ -96,7 +96,7 @@ export const Products: React.FC = () => {
                 
                   <div className="relative w-16 h-16 rounded-full flex items-center justify-center bg-white">
                     <div className="absolute inset-0 rounded-full border border-r-[#6E51E0] border-b-[#6E51E0] border-t-gray-100 border-l-gray-100"></div>
-                    <img src={vector3} className="w-7 h-7 relative z-20" />
+                    <img src={Vector3} className="w-7 h-7 relative z-20" />
                   </div>
 
                 </div>
