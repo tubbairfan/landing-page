@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Landing_page} from "./screens/landing-page/index";
+import { Footer } from './components/Footer';
 const App:React.FC= () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const App:React.FC= () => {
         
       </Routes>
     </BrowserRouter>
+    <Footer/>
     </div>
   )
 }

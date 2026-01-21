@@ -14,10 +14,10 @@ export const HeroSection: React.FC = () => {
 
     return (
         <div className="overflow-x-hidden px-4 md:px-8 py-10 mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
 
                 {/* LEFT CARDS */}
-                <div className="order-2 md:order-none flex flex-col gap-6 items-center md:items-end">
+                <div className="order-2 md:order-0 flex flex-col gap-6 items-center md:items-end">
 
                     <Card className="w-35">
                         <img src={vector} alt="..." className="h-8 w-8 mb-2" />
@@ -51,12 +51,12 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* CENTER CONTENT */}
-                <div className="order-1 md:order-none text-center">
+                <div className="order-1 md:order-0 text-center">
                     <p className=" font-semibold mb-2" style={{ color: "#6E51E0" }}>
                         Our Framer Template
                     </p>
 
-                    <p className="text-3xl md:text-4xl font-bold  leading-relaxed">
+                    <p className="text-3xl lg:text-3xl font-bold  leading-relaxed">
                         Save time and build better with{' '}
                         <Chip text="Stellar" />
 
