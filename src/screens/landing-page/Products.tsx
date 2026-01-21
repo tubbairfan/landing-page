@@ -146,7 +146,7 @@ export const Products: React.FC = () => {
             </div>
           </Card>
         </div>
-        <div className='flex py-5 gap-5 mr-10 xl:px-80  '>
+        <div className='flex py-5 gap-5 mr-10 xl:px-70  '>
           <div >
             <div className='flex'>
               <img src={vector4} />

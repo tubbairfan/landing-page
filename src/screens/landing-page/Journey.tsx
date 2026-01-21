@@ -6,7 +6,7 @@ import Group2 from "../../assets/Group2.svg"
 import Group3 from "../../assets/Group3.svg"
 import { Button } from "../../components/UI/Button"
 import vector1 from "../../assets/vector1.svg"
-import vector2 from "../../assets/vector2.svg"
+import vector2 from "../../assets/Vector2.svg"
 import arrowup from "../../assets/arrowup.svg"
 import bg2 from "../../assets/bg2.svg"
 import clip from "../../assets/Clip path group.svg"
@@ -142,7 +142,7 @@ export const Subscribe: React.FC = () => {
 
             {/* Column 2 */}
             
-            <div className="space-y-5 ml-5">
+            <div className="space-y-5 ml-5 xl:ml-25" >
                 <p className="text-sm font-semibold text-[#6E51E0]">Get Started</p>
 
                 <p className="text-3xl md:text-4xl font-bold leading-snug">

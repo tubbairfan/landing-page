@@ -83,7 +83,7 @@ export const Features: React.FC = () => {
         <img
           src={mobile}
           className="
-           relative w-44  mt-18 sm:w-52 md:w-60 md:top-16lg:w-64 lg:top-27 z-10 "
+           relative w-44  mt-18 sm:w-52 md:w-60 md:top-16 lg:w-64 lg:top-27 z-10 "
         />
 
       </div>
