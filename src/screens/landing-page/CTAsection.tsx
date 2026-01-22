@@ -3,16 +3,16 @@ import Container from "../../assets/Container.svg";
 import right from "../../assets/right.svg"
 export const CTAsection: React.FC = () => {
     return (
-        <div className='mb-30 mt-40 relative h-200 overflow-hidden md:h-120 lg:h-100 xl:h-90'>
-            <div className="absolute inset-0 bg-gray-100 h-200  md:h-120 lg:h-100  xl:h-90">
+        <div className="mb-30 mt-30 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gray-100">
                 <div
-                    className="relative h-200 bg-no-repeat bg-cover md:h-120 lg:h-100  xl:h-90"
-                    style={{ backgroundImage: `url(${Container})` }} >
-                </div>
+                    className="relative h-full bg-no-repeat bg-cover"
+                    style={{ backgroundImage: `url(${Container})` }}
+                />
             </div>
-            <div className="relative z-10 px-6 py-14">
+            <div className="relative z-10 px-14 py-14">
 
-                <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                     {/* column1 */}
                     <div className="text-center lg:text-left">
@@ -42,7 +42,7 @@ export const CTAsection: React.FC = () => {
                                 Subscribe
                             </button>
                         </div>
-                        <div className='flex gap-5'>
+                        <div className='flex flex-col gap-5 md:flex-row'>
                             <div className="flex items-start gap-3">
                                 <img src={right} className="h-5 w-5 mt-1" />
                                 <p className="text-gray-600 text-sm">Free 7-day trial</p>

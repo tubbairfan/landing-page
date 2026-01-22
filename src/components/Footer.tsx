@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1  md:grid-cols-4  gap-10 ">
+                <div className="grid grid-cols-2  md:grid-cols-4  gap-10 ">
 
                     {/* column2 */}
                     <div className="space-y-3">

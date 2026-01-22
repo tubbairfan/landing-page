@@ -7,17 +7,27 @@ import i2 from "../../assets/i2.svg"
 import Group1 from "../../assets/Group1.svg"
 import Group2 from "../../assets/Group2.svg"
 
+
 export const Feedback: React.FC = () => {
   return (
-    <div className='mb-30 mt-40 relative h-500 overflow-hidden md:h-280 lg:h-200 xl:h-190'>
-      <div className="absolute inset-0 bg-gray-100 h-500  md:h-280 lg:h-200  xl:h-190">
+    <div className="mb-30 mt-30 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gray-100">
         <div
-          className="relative h-500 bg-no-repeat bg-cover md:h-280 lg:h-200  xl:h-190"
-          style={{ backgroundImage: `url(${Container})` }} >
-        </div>
+          className="relative h-full bg-no-repeat bg-cover"
+          style={{ backgroundImage: `url(${Container})` }}
+        />
+      </div>
+
+
+      <div className=" absolute bottom-0 left-0 w-full h-70 xl:h-40 bg-linear-to-t  from-white/60  via-white/70  to-transparent  z-20">
+      </div>
+      <div className="absolute inset-x-0 bottom-5  md:bottom-20 xl:bottom-15 flex justify-center z-30">
+        <button className="px-6 py-3 bg-[#6E51E0] text-white rounded-full shadow-lg">
+          Follow us on Social Media
+        </button>
       </div>
       <div className="relative z-10 p-10">
-        <div className="max-w-6xl mx-auto text-center mt-30 mb-10">
+        <div className="max-w-6xl mx-auto text-center mt-10 mb-10">
           <p className="text-sm text-purple-600 mb-2">Our Customers</p>
           <h2 className="text-4xl font-bold mb-12">
             See what our <br /> customers are saying
@@ -25,6 +35,7 @@ export const Feedback: React.FC = () => {
 
         </div>
         <div className='relative'>
+
           <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3  ">
 
             {/* <!--1  Card --> */}
@@ -185,24 +196,7 @@ export const Feedback: React.FC = () => {
 
             </Card>
           </div>
-
-
-          <div className="
-            pointer-events-none
-            absolute bottom-0 left-0 w-full h-38 bg-linear-to-t  from-white  via-white/70  to-transparent  z-20"></div>
-
-
-          {/* Center Button */}
-          <div className="absolute inset-x-0 bottom-9 flex justify-center z-30">
-            <button className="px-6 py-3 bg-[#6E51E0] text-white rounded-full shadow-lg">
-              Follow us on Social Media
-            </button>
-          </div>
         </div>
-
-
-
-
       </div>
     </div>
   )

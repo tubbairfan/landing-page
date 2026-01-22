@@ -13,18 +13,17 @@ import Container from "../../assets/Container.svg";
 
 export const Products: React.FC = () => {
   return (
-    <div className='mb-30 relative h-450 overflow-hidden lg:h-250 '>
-      <div className="absolute inset-0 bg-gray-100 h-450  lg:h-250">
+    <div className="mb-30 mt-30 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gray-100">
         <div
-          className="relative h-450 bg-no-repeat bg-cover lg:h-250"
+          className="relative h-full bg-no-repeat bg-cover"
           style={{ backgroundImage: `url(${Container})` }}
-        >
-        </div>
-
+        />
       </div>
 
-      <div className="relative z-10 p-10">
-        <div className="mt-20 mb-40 text-center md:px-35">
+
+      <div className="relative z-10 p-10 lg:px-20 py-10">
+        <div className="mt-20 mb-15 text-center md:px-35">
           <p className=" font-semibold mb-2" style={{ color: "#6E51E0" }}>
             Powerful Features
           </p>
@@ -34,7 +33,7 @@ export const Products: React.FC = () => {
           </p>
         </div>
         <div className='flex flex-col gap-5 justify-center lg:flex-row'>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center lg:items-start">
             <Card className="max-w-sm w-full ">
               <div>
                 <div className="flex items-center justify-between">
@@ -73,12 +72,12 @@ export const Products: React.FC = () => {
 
 
             </Card>
-            <div className="mt-6 text-center lg:text-left">
+            <div className="mt-6 text-center lg:text-left ">
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <img src={vector4} />
                 <p className="font-semibold">Beautiful Design</p>
               </div>
-              <p className="mt-2 text-sm text-gray-600 px-4 lg:px-5 xl:px-2 ">
+              <p className="mt-2 text-sm text-gray-600    ">
                 Gain a competitive edge with our SEO
                 optimization tools, ensuring your website ranks
               </p>
@@ -104,7 +103,7 @@ export const Products: React.FC = () => {
                     <div className="absolute  -left-12 -right-12 h-px 
                      bg-linear-to-r from-[#6E51E0] via-gray-200 to-[#6E51E0] 
                       z-0"></div>
-            
+
                     <div className="relative w-16 h-16 mx-2 rounded-full flex items-center justify-center bg-white z-10">
                       <div className="absolute inset-0 rounded-full border border-t-[#6E51E0] border-l-[#6E51E0] border-b-gray-100 border-r-gray-100"></div>
                       <img src={cloud} className="w-8 h-8 relative z-20" />
