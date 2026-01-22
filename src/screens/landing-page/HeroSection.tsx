@@ -13,11 +13,11 @@ import {Chip} from "../../components/UI/Chip"
 export const HeroSection: React.FC = () => {
 
     return (
-        <div className="overflow-x-hidden px-4 md:px-8 py-10 mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div className="overflow-x-hidden px-4  md:px-2 lg:px-8 py-10 mt-20 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
 
                 {/* LEFT CARDS */}
-                <div className="order-2 md:order-0 flex flex-col gap-6 items-center md:items-end">
+               <div className="hidden lg:flex order-2 lg:order-0 flex-col gap-6 items-center lg:items-end">
 
                     <Card className="w-35">
                         <img src={vector} alt="..." className="h-8 w-8 mb-2" />
@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* CENTER CONTENT */}
-                <div className="order-1 md:order-0 text-center">
+                <div className="order-1 lg:order-0 text-center ">
                     <p className=" font-semibold mb-2" style={{ color: "#6E51E0" }}>
                         Our Framer Template
                     </p>
@@ -70,12 +70,12 @@ export const HeroSection: React.FC = () => {
                     <img
                         src={mobile}
                         alt="picture"
-                        className="h-64 md:h-80 w-auto mt-10 mx-auto"
+                        className="h-64 md:h-80 w-auto mt-10 mx-auto lg:mt-20 xl:mt-10 "
                     />
                 </div>
 
                 {/* RIGHT CARDS */}
-                <div className="order-3 md:order-none flex flex-col gap-6 items-center md:items-start">
+                <div className="hidden lg:order-0 lg:flex order-2 flex-col gap-6 items-center lg:items-start">
                     <Card className="w-37 whitespace-nowrap">
                             <p className="text-md font-bold">Sales Meeting</p>
                             <p className="text-gray-600">11:00 - 1:30</p>
@@ -83,7 +83,7 @@ export const HeroSection: React.FC = () => {
                             <div className="flex items-center mt-3 -space-x-2">
                                 <img
                                     src={Group}
-                                    className="h-8 w-8 rounded-full border-1 border-white z-40 bg-white"
+                                    className="h-8 w-8 rounded-full border-width: 1px border-white z-40 bg-white"
                                 />
                                 <img
                                     src={Group1}

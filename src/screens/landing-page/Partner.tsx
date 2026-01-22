@@ -17,18 +17,18 @@ export const Partner: React.FC = () => {
     ];
 
     return (
-        <div className="text-center mt-30 mb-30">
+        <div className="text-center mt-20 mb-30">
             <p className=" mb-15 text-lg">
                 <b>The world's best companies trust Stellar.</b>
             </p>
 
-            <ul className=" flex flex-wrap  justify-center items-center gap-15">
+            <ul className=" flex flex-wrap  justify-center items-center gap-10 md:gap-10 lg:gap-2 xl:gap-20 ">
                 {partners.map((logo, index) => (
                     <li key={index}  className="flex items-center pr-10 border-r border-gray-200 last:border-none">
                         <img
                             src={logo}
                             alt={"..."}
-                            className="h-5 w-26 md:h-10 "
+                            className="h-5 w-26 md:h-10 lg:h-5 xl:h-10 "
                         />
                     </li>
                 ))}

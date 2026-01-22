@@ -14,8 +14,8 @@ export const Subscribe: React.FC = () => {
     return (
         <div className="grid grid-cols-1  lg:grid-cols-[500px_1fr] gap-12 px-4 py-16 xl:ml-30 lg:ml-10">
             {/* Column 1 */}
-            <div className="relative flex items-center justify-center  min-h-[520px] ">
-                <div className="absolute top-4 left-6 md:top-0  z-20">
+            <div className="relative flex items-center justify-center  min-h-[580px] md:min-h-[550px]">
+                <div className="absolute top-4 left-6 md:top-10 md:left-30 lg:top-0 lg:left-6  z-20">
                     <Card className="w-60">
                         <div className="flex items-center justify-between mb-5">
                             <div>
@@ -63,7 +63,7 @@ export const Subscribe: React.FC = () => {
                         </div>
                     </Card>
                 </div>
-                <div className="absolute bottom-6 right-6 md:bottom-4 md:right-10 z-20">
+                <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 z-20">
                     <Card className="w-full max-w-sm">
                         <div className="flex flex-row gap-7">
                             <div>
